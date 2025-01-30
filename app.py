@@ -18,7 +18,7 @@ console_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 
 class AutoPressApp:
-    def __init__(self, master):  # Fixed the constructor name from init to __init__
+    def __init__(self, master): 
         self.master = master
         self.master.title("Auto Press F")
         
@@ -77,7 +77,7 @@ class AutoPressApp:
                 self.stop_pressing()
                 time.sleep(0.5)  
 
-if __name__ == "__main__":  # Corrected this line
+if __name__ == "__main__": 
     root = tk.Tk()
     app = AutoPressApp(root)
     root.mainloop()
